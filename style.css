@@ -223,3 +223,24 @@ button {
     width: 30px;
     display:block;
 }
+
+/*Sección Sobre Nosotros*/
+
+.sobre-nosotros{
+    padding: 80px 0;
+}
+
+.sobre-nosotros .sobre-nosotros-img {
+    background-color: red;
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+    margin-left: 3%;
+}
+
+.sobre-nosotros .sobre-nosotros-img .image-box{
+    width:100%;
+}
+
+.sobre-nosotros .contenido-sobre-nosotros{
+    background-color: blue;
+}
