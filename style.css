@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;400;500;700;900&display=swap');
+
+body{
+    margin: 0;
+    line-height: 1.5;
+}
+
+body,
+textarea,
+input,
+button {
+    font-family: 'Raleway', sans-serif;
+    font-weight 400;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.contenedor{
+    max-width: 1170px;
+    margin:auto; 
+}
+
+.justificar-contenido{
+    justify-content: space-between;
+}
+
+@keyframes anim01{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes anim02{
+    0%{
+        transform:rotate(0deg);
+    }
+    100%{
+        transform:rotate(360deg);
+    }
+}
+
+.row{
+    display:flex;
+    flex-wrap:wrap;
+}
+
+.alinear-elementos-centro{
+    align-items: center;
+}
+
+/*Barra de inicio*/
+.barra-inicio{
+    position:absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 99;
+}
+
+.barra-inicio .nombre-empresa{
+    /*background-color: #ABB4D2;*/
+    padding: 0 15px;
+}
+
+.barra-inicio .nombre-empresa a{
+    text-decoration: none; 
+    font-size: 30px;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+
+.barra-inicio .nav ul li a:hover{
+    color: #FF9800;
+}
+
+.barra-inicio .nav {
+        /*background-color: #ABB4D2;*/
+        padding: 0 15px;
+}
+
+.barra-inicio .nav ul{
+    list-style: none; 
+    margin: 0;
+    padding: 0; 
+}
+
+.barra-inicio .nav ul li{
+    display: inline-block;
+    margin-left: 30px;
+}
+
+.barra-inicio .nav ul li a {
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: 600;
+        color: #ffffff;
+        padding: 25px 0;
+        display: block;
+        transition: all 0.5s ease;
+}
+
+
+.Inicio {
+        min-height: 100vh;
+        background-size: cover;
+        background-position: center;
+        /*background-image: url('../IMG/limpiezaHome.png');*/
+        background-image: url('D:/Proyectos Visual Studio/primerProyectojQuery/IMG/limpiezaHome.png');
+        position:relative;
+        z-index: 1;
+}
+
+.Inicio:before{
+    content: '';
+    position:absolute;
+    box-sizing:border-box;
+    left: 0;
+    top:0;
+    right: 0;
+    bottom: 0;
+    background-color: #000000;
+    opacity: 0.7;
+    z-index: -1;
+}
+
+.Inicio .shape-01{
+    position:absolute;
+    height: 30px;
+    width: 30px;
+    border: 2px solid #ffffff;
+    right: 5%;
+    top: 20%;
+    animation: anim01 7s linear infinite;
+}
+
+.Inicio .shape-02{
+    position:absolute;
+    height:50px;
+    width: 50px;
+    border: 2px solid #ffffff;
+    top: 40%;
+    left: 35px;
+    animation: anim02 7s linear infinite;
+}
+
+.Inicio .shape-03{
+    position:absolute;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    border: 2.5px dotted #ffffff;
+    animation: anim01 7s linear infinite;
+    top: 65%;
+    right: 30%;
+}
+
+.Inicio .shape-04{
+    position: absolute;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent; 
+    border-bottom: 60px solid #ffffff;
+    animation: anim01 5s linear infinite;
+    top: 15%;
+    right: 62%;
+}
+
+.Inicio .row{
+    min-height: 100vh;
+}
+
+.Inicio .contenido-inicio{
+    flex: 0 0 100%;
+    max-width: 100%;
+    text-align: center;
+}
+
+.Inicio .contenido-inicio h4{
+    font-size: 20px;
+    color:#ffffff;
+    margin: 0;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.Inicio .contenido-inicio h1{
+    font-size: 60px;
+    margin:0;
+    color:#ffffff;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+.Inicio .scroll-down{
+    position:absolute;
+    left: 50%;
+    bottom: 30px;
+    height: 30px;
+    width: 30px;
+    animation: scroll 2s ease infinite;
+}
+
+@keyframes scroll{
+    0%,20%,50%,80%,100%{
+        transform: translateY(0);
+    }
+    40%{
+        transform: translateY(-35px);
+    }
+    60%{
+        transform: translateY(-15px);
+    }
+}
+
+.Inicio .scroll-down img{
+    width: 30px;
+    display:block;
+}
