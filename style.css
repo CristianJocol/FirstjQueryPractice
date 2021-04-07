@@ -135,7 +135,7 @@ button {
     position:absolute;
     height: 30px;
     width: 30px;
-    border: 2px solid #ffffff;
+    border: 2px solid #00A0A0;
     right: 5%;
     top: 20%;
     animation: anim01 7s linear infinite;
@@ -145,7 +145,7 @@ button {
     position:absolute;
     height:50px;
     width: 50px;
-    border: 2px solid #ffffff;
+    border: 2px solid #00A0A0;
     top: 40%;
     left: 35px;
     animation: anim02 7s linear infinite;
@@ -156,21 +156,44 @@ button {
     border-radius: 50%;
     width: 40px;
     height: 40px;
-    border: 2.5px dotted #ffffff;
+    border: 2.5px dotted #00A0A0;
     animation: anim01 7s linear infinite;
     top: 65%;
     right: 30%;
+    margin-top: 30px;
 }
 
 .Inicio .shape-04{
     position: absolute;
-    border-left: 30px solid transparent;
-    border-right: 30px solid transparent; 
-    border-bottom: 60px solid #ffffff;
+    border-left: 50px dotted transparent;
+    border-left: 50px dotted transparent; 
+    border-bottom: 50px outset #00A0A0;
     animation: anim01 5s linear infinite;
     top: 15%;
     right: 62%;
 }
+
+.sobre-nosotros .shape-01sn{
+    height: 60px;
+    width: 60px;
+    border: 2px solid #00A0A0;
+    position: absolute;
+    animation: anim01 7s linear infinite;
+    right: 15%;
+}
+
+.sobre-nosotros .shape-02sn {
+    position: absolute;
+    border-left: 90px dotted transparent;
+    border-left: 90px dotted transparent;
+    border-bottom: 90px dotted #00A0A0;
+    animation: anim01 5s linear infinite;
+    right: 85%;
+    margin-top: 150px;
+    margin-right: 30px;
+}
+
+
 
 .Inicio .row{
     min-height: 100vh;
@@ -226,21 +249,58 @@ button {
 
 /*Sección Sobre Nosotros*/
 
-.sobre-nosotros{
+.sobre-nosotros {
     padding: 80px 0;
+    background-color: #fafac9;
 }
 
 .sobre-nosotros .sobre-nosotros-img {
-    background-color: red;
-    flex: 0 0 33.33%;
-    max-width: 33.33%;
-    margin-left: 3%;
+    flex: 0 0 46.46%;
+    max-width: 66.66%;
+    padding: 0 0 0 188px;
 }
 
-.sobre-nosotros .sobre-nosotros-img .image-box{
-    width:100%;
+.sobre-nosotros .sobre-nosotros-img .image-box img{
+    width:90%;
+    display: block;
+    /*padding-right: 125px;*/
 }
 
 .sobre-nosotros .contenido-sobre-nosotros{
-    background-color: blue;
+    flex: 0 0 40%;
+    max-width: 40%;
+    padding: 60px 0 0 10px;
+}
+
+.titulo-sobreNosotros{
+    flex: 0 0 70%;
+    max-width: 70%;
+}
+
+    .titulo-sobreNosotros h1 {
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-size: 55px;
+    text-transform: uppercase;
+    margin: 0;
+    display: inline-block;
+    position: relative;
+    color: #E7D749;
+}
+
+    .titulo-sobreNosotros h1::before {
+        content: '';
+        box-sizing: border-box;
+        position: absolute;
+        left: 0;
+        bottom: 5px;
+        width: 320px;
+        height: 3px;
+        background-color: #008080;
+}
+
+.sobre-nosotros .contenido-sobre-nosotros p{
+    font-size: 20px;
+    color: #555555;
+    line-height: 26px;
 }
