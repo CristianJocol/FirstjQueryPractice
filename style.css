@@ -10,7 +10,7 @@ textarea,
 input,
 button {
     font-family: 'Raleway', sans-serif;
-    font-weight 400;
+    font-weight: 400;
 }
 
 *{
@@ -44,6 +44,32 @@ button {
         transform:rotate(360deg);
     }
 }
+
+@keyframes scaleIn {
+    from   {
+        transform: scale(.5, .5);
+        opacity: .5;
+    }
+    to{
+        transform: scale(2.5, 2.5);
+        opacity: 0;
+    }
+}
+
+@keyframes circle{
+    0%{
+      transform:rotate(0deg)
+                translate(-70px)
+                rotate(0deg);
+    
+    }
+    100%{
+      transform:rotate(360deg)
+                translate(-70px)
+                rotate(-360deg);
+    }
+  }
+  
 
 .row{
     display:flex;
@@ -113,7 +139,7 @@ button {
         background-size: cover;
         background-position: center;
         /*background-image: url('../IMG/limpiezaHome.png');*/
-        background-image: url('D:/Proyectos Visual Studio/primerProyectojQuery/IMG/limpiezaHome.png');
+        background-image: url('C:/Users/GOFALBET 3/Documents/ProyectoVS/FirstjQueryPractice/IMG/limpiezaHome.png');
         position:relative;
         z-index: 1;
 }
@@ -174,25 +200,70 @@ button {
 }
 
 .sobre-nosotros .shape-01sn{
-    height: 60px;
-    width: 60px;
-    border: 2px solid #00A0A0;
+    height: 50px;
+    width: 50px;
+    border: 2px solid #669195;
     position: absolute;
-    animation: anim01 7s linear infinite;
-    right: 15%;
+    animation: anim01 3s alternate infinite;
+    margin: 18% 0 0 50%;
 }
 
-.sobre-nosotros .shape-02sn {
+.sobre-nosotros .shape-02sn{
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    border: 2px solid #669195;
     position: absolute;
-    border-left: 90px dotted transparent;
-    border-left: 90px dotted transparent;
-    border-bottom: 90px dotted #00A0A0;
-    animation: anim01 5s linear infinite;
-    right: 85%;
-    margin-top: 150px;
-    margin-right: 30px;
+    animation: scaleIn 5s infinite cubic-bezier(.36, .11, .89, .32);
+    margin: 18% 20% 0 6%;
 }
 
+.sobre-nosotros .shape-03sn{
+    height: 70px;
+    width: 70px;
+    border: 2px solid #669195;
+    position: absolute;
+    animation: anim01 4s alternate infinite;
+    margin: 0 0 0 30%;
+}
+
+.sobre-nosotros .shape-04sn{
+    position:absolute;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    border: 2px solid #669195;
+    animation: scaleIn 2s infinite cubic-bezier(.36, .11, .89, .32);
+    margin: 30% 0 0 40%;
+}
+
+.sobre-nosotros .shape-05sn{
+    height: 40px;
+    width: 40px;
+    border: 2px solid #669195;
+    position: absolute;
+    animation: anim01 2s forwards infinite;
+    margin: 5% 50% 0 5%;
+}
+
+.sobre-nosotros .shape-06sn{
+    position:absolute;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    border: 2px solid #669195;
+    animation: scaleIn 7s infinite cubic-bezier(.36, .11, .89, .32);
+    margin: 20% 0 0 90%;
+}
+
+.sobre-nosotros .shape-07sn{
+    height: 40px;
+    width: 40px;
+    border: 2px solid #669195;
+    position: absolute;
+    animation: anim01 2s linear infinite;
+    margin: 0 0 0 80%;
+}
 
 
 .Inicio .row{
@@ -247,7 +318,7 @@ button {
     display:block;
 }
 
-/*Sección Sobre Nosotros*/
+/*Secciï¿½n Sobre Nosotros*/
 
 .sobre-nosotros {
     padding: 80px 0;
@@ -261,6 +332,7 @@ button {
 }
 
 .sobre-nosotros .sobre-nosotros-img .image-box img{
+    margin: 80px 0 0 0;
     width:90%;
     display: block;
     /*padding-right: 125px;*/
@@ -285,7 +357,7 @@ button {
     margin: 0;
     display: inline-block;
     position: relative;
-    color: #E7D749;
+    color: #f3b229;
 }
 
     .titulo-sobreNosotros h1::before {
@@ -296,11 +368,61 @@ button {
         bottom: 5px;
         width: 320px;
         height: 3px;
-        background-color: #008080;
+        background-color:#00474f;
 }
 
 .sobre-nosotros .contenido-sobre-nosotros p{
-    font-size: 20px;
+    font-size: 21px;
     color: #555555;
     line-height: 26px;
+    margin: 0;
+    text-align:justify;
+}
+
+.sobre-nosotros .contenido-sobre-nosotros .estadisticas .caja-estadisticas{
+    /*background-color: red;*/
+    flex: 0 0 30%;
+    max-width: 30%;
+    padding: 20px 0 0 60px;
+    text-align: center;
+}
+
+.sobre-nosotros .contenido-sobre-nosotros .estadisticas .caja-estadisticas h2{
+    font-weight: 500;
+    font-size: 35px;
+}
+
+.sobre-nosotros .contenido-sobre-nosotros .estadisticas .caja-estadisticas h5{
+    font-weight: 400;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.btn-contact{
+    border: 3px solid transparent;
+    padding: 10px 35px;
+    border-radius: 40px;
+    text-decoration: none;
+    cursor: pointer;
+    line-height: 1.5;
+    background-color: #669195;
+    color: white;
+    font-weight: 400;
+    font-size: 16px;
+    display: inline-block;
+}
+
+.btn-01:focus{
+    outline: none;
+}
+
+.btn-01:hover{
+    background-color: transparent;
+    border-color:  #669195;
+    color:#669195;
+    font-weight: 600;
+}
+
+.sobre-nosotros .contenido-sobre-nosotros .btn-contact{
+    margin: 20px 0 0 215px;
 }
