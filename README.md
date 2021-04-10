@@ -6,4 +6,8 @@ Mr.Limpio es una empresa dedicada a la limpieza de interiores y exteriores de to
 
 ![Mr.Limpio logo](https://github.com/CristianJocol/FirstjQueryPractice/blob/main/IMG/logo.png)
 
-## Características de la aplicación 
+## Características de la aplicación
+
+### Créditos
+Basado en la serie de tutoriales de: [The WebShala](https://www.youtube.com/channel/UC94lpQZvaokkIqU-TvtsGXQ)
+
